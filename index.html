@@ -790,8 +790,11 @@
 <script src="js\custom.js"></script>
 
 <script>
-function copyLink() {
+function copyLink(event) {
   var link = document.querySelector('.title a').getAttribute('href');
+  
+  // Ngăn chặn hành động mặc định của thẻ <a> (mở liên kết)
+  event.preventDefault();
   
   // Kiểm tra nếu là thiết bị di động
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -823,5 +826,6 @@ function copyLink() {
   }
 }
 </script>
+
 </body>
 </html>
