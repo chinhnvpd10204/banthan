@@ -788,24 +788,41 @@
 <script src="js\parallax.min.js"></script>
 <script src="js\jquery.magnific-popup.min.js"></script>
 <script src="js\custom.js"></script>
+<h4 class="my-0 title"><a href="https://www.facebook.com/vchinhcutiiii" onclick="copyLink()">Mua Mã Nguồn Uy Tín Giá Rẻ</a></h4>
+
 <script>
-	function copyLink(event) {
-	  // Lấy liên kết từ thuộc tính href của thẻ <a>
-	  var link = event.currentTarget.getAttribute('href');
-	  
-	  // Sao chép liên kết vào clipboard
-	  navigator.clipboard.writeText(link)
-		.then(() => {
-		  // Thông báo khi sao chép thành công
-		  alert('Sao Chép Số Tài Khoản Thành Công!');
-		})
-		.catch(err => {
-		  console.error('Lỗi khi sao chép:', err);
-		});
-	  
-	  // Ngăn chặn hành động mặc định của liên kết (mở liên kết)
-	  event.preventDefault();
-	}
-	</script>
+function copyLink() {
+  var link = document.querySelector('.title a').getAttribute('href');
+  
+  // Kiểm tra nếu là thiết bị di động
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    // Hiển thị cảnh báo với liên kết để sao chép
+    var isCopied = prompt("Sao chép liên kết sau:", link);
+    
+    // Nếu người dùng nhấn OK trong prompt
+    if (isCopied) {
+      // Sao chép liên kết vào clipboard
+      navigator.clipboard.writeText(link)
+        .then(() => {
+          // Thông báo khi sao chép thành công
+          alert('Đã sao chép liên kết!');
+        })
+        .catch(err => {
+          console.error('Lỗi khi sao chép:', err);
+        });
+    }
+  } else {
+    // Nếu không phải là thiết bị di động, sao chép trực tiếp vào clipboard
+    navigator.clipboard.writeText(link)
+      .then(() => {
+        // Thông báo khi sao chép thành công
+        alert('Đã sao chép liên kết!');
+      })
+      .catch(err => {
+        console.error('Lỗi khi sao chép:', err);
+      });
+  }
+}
+</script>
 </body>
 </html>
