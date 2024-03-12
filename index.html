@@ -687,7 +687,7 @@
 		<div class="container">
 			
 			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">BÀI VIẾT</h2>
+			<h2 class="section-title wow fadeInUp">THÔNG TIN THANH TOÁN</h2>
 
 			<div class="spacer" data-height="60"></div>
 			
@@ -698,16 +698,16 @@
 					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
 						<div class="thumb">
 							<a href="#">
-								<span class="category">Bài Viết</span>
+								<span class="category">MOMO</span>
 							</a>
 							<a href="https://www.facebook.com/vchinhcutiiii">
-								<img src="https://bsscommerce.com/shopify/wp-content/uploads/2022/01/8.jpg" alt="blog-title">
+								<img src="https://sieuthituivai.com/wp-content/uploads/2023/07/logo-momo-4.jpg" alt="blog-title">
 							</a>
 						</div>
 						<div class="details">
-							<h4 class="my-0 title"><a href="https://www.facebook.com/vchinhcutiiii">Dịch Vụ Thiết Kế Front-End Giá Rẻ</a></h4>
+							<h4 class="my-0 title"><a href="03335942740" onclick="copyLink(event)">03335942740</a></h4>
 							<ul class="list-inline meta mb-0 mt-2">
-								<li class="list-inline-item">10 October, 2022</li>
+								<li class="list-inline-item">Bấm Vào STK Để Sao Chép</li>
 								<li class="list-inline-item">Văn Chính</li>
 							</ul>
 						</div>
@@ -719,16 +719,16 @@
 					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
 						<div class="thumb">
 							<a href="#">
-								<span class="category">Bài Viết</span>
+								<span class="category">MB BANK</span>
 							</a>
 							<a href="https://www.facebook.com/vchinhcutiiii">
-								<img src="images\blog\2.svg" alt="blog-title">
+								<img src="https://seeklogo.com/images/M/mb-bank-logo-B974DA7E46-seeklogo.com.png" alt="blog-title">
 							</a>
 						</div>
 						<div class="details">
-							<h4 class="my-0 title"><a href="https://www.facebook.com/vchinhcutiiii">Thiết Kế WEB Theo Yêu Cầu</a></h4>
+							<h4 class="my-0 title"><a href="271220055555" onclick="copyLink(event)">271220055555</a></h4>
 							<ul class="list-inline meta mb-0 mt-2">
-								<li class="list-inline-item">10 October, 2022</li>
+								<li class="list-inline-item">Bấm Vào STK Để Sao Chép</li>
 								<li class="list-inline-item">Văn Chính</li>
 							</ul>
 						</div>
@@ -740,16 +740,16 @@
 					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
 						<div class="thumb">
 							<a href="#">
-								<span class="category">Bài Viết</span>
+								<span class="category">Á CHÂU BANK</span>
 							</a>
 							<a href="https://www.facebook.com/vchinhcutiiii">
-								<img src="images\blog\3.svg" alt="blog-title">
+								<img src="https://inkythuatso.com/uploads/images/2021/11/logo-acb-vector-inkythuatso-01-10-10-25-09.jpg" alt="blog-title">
 							</a>
 						</div>
 						<div class="details">
-							<h4 class="my-0 title"><a href="https://www.facebook.com/vchinhcutiiii">Mua Mã Nguồn Uy Tín Giá Rẻ</a></h4>
+							<h4 class="my-0 title"><a href="16087671" onclick="copyLink(event)">16087671</a></h4>
 							<ul class="list-inline meta mb-0 mt-2">
-								<li class="list-inline-item">10 October, 2022</li>
+								<li class="list-inline-item">Bấm Vào STK Để Sao Chép</li>
 								<li class="list-inline-item">Văn Chính</li>
 							</ul>
 						</div>
@@ -788,6 +788,24 @@
 <script src="js\parallax.min.js"></script>
 <script src="js\jquery.magnific-popup.min.js"></script>
 <script src="js\custom.js"></script>
-
+<script>
+	function copyLink(event) {
+	  // Lấy liên kết từ thuộc tính href của thẻ <a>
+	  var link = event.currentTarget.getAttribute('href');
+	  
+	  // Sao chép liên kết vào clipboard
+	  navigator.clipboard.writeText(link)
+		.then(() => {
+		  // Thông báo khi sao chép thành công
+		  alert('Sao Chép Số Tài Khoản Thành Công!');
+		})
+		.catch(err => {
+		  console.error('Lỗi khi sao chép:', err);
+		});
+	  
+	  // Ngăn chặn hành động mặc định của liên kết (mở liên kết)
+	  event.preventDefault();
+	}
+	</script>
 </body>
 </html>
